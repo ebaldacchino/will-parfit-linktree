@@ -2,3 +2,13 @@
 	font-family: 'High Tide';
 	src: url('HighTide.ttf');
 }
+@media (max-width: 279px) {
+	* {
+		font-size: 5.8vw;
+	}
+}
+@media (min-width: 2000px) {
+	* {
+		font-size: 1vw;
+	}
+}

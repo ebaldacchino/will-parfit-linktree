@@ -1,10 +1,7 @@
 import tw, { css, styled } from 'twin.macro';
 
 export const IconContainer = styled.a`
-	${tw`flex-1 flex justify-center items-center py-3 text-white mt-1 mx-0.5 cursor-pointer duration-200 rounded text-2xl duration-200`}
-	@media (min-width: 2000px) {
-		font-size:2vw;
-	}
+	${tw`flex-1 flex justify-center items-center py-3 text-white mt-1 mx-0.5 cursor-pointer duration-200 rounded text-2xl duration-200`} 
 	${(props) =>
 		(props.facebook &&
 			css`
