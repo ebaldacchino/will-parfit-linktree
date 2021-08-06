@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 export const Title = styled.h1`
 	font-family: 'High Tide', sans-serif;
 	text-shadow: 0 0 0.375rem rgba(255, 255, 255, 0.5);
-	${tw`text-white text-5xl sm:text-6xl md:text-8xl my-2 text-center`}
+	${tw`text-white text-5xl sm:text-6xl md:text-8xl mt-1 mb-2.5 text-center`}
 `;
 
 export const ImageContainer = styled.div`
