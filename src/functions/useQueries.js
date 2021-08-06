@@ -14,19 +14,15 @@ const query = graphql`
 				}
 			}
 		}
-		imageSharp(id: { eq: "431c325c-9efa-501e-862a-70f88210338d" }) {
-			gatsbyImageData(placeholder: BLURRED)
-		}
 	}
 `;
 
 const useQueries = () => {
 	const {
 		allContentfulWidget: { nodes: widgets },
-		imageSharp: { gatsbyImageData: logo },
 	} = useStaticQuery(query);
 
-	return { logo, widgets };
+	return { widgets };
 };
 
 export default useQueries;
