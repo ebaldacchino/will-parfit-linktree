@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './navbar';
 import tw, { styled } from 'twin.macro';
-import SEO from './seo';
+import Seo from './seo';
 
 const PageContainer = styled.div`
 	background: #10101c;
@@ -12,7 +12,7 @@ const PageContainer = styled.div`
 const Layout = ({ children, title }) => {
 	return (
 		<PageContainer>
-			<SEO pageTitle={title} />
+			<Seo pageTitle={title} />
 			<Navbar />
 			{children}
 		</PageContainer>
