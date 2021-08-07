@@ -14,15 +14,22 @@ const query = graphql`
 				}
 			}
 		}
+		site {
+			siteMetadata {
+				siteUrl
+				title
+			}
+		}
 	}
 `;
 
 const useQueries = () => {
 	const {
 		allContentfulWidget: { nodes: widgets },
+		site: { siteMetadata },
 	} = useStaticQuery(query);
 
-	return { widgets };
+	return { siteMetadata, widgets };
 };
 
 export default useQueries;

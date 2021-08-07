@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar';
 import tw, { styled } from 'twin.macro';
+import SEO from './seo';
 
 const PageContainer = styled.div`
 	background: #10101c;
@@ -8,9 +9,10 @@ const PageContainer = styled.div`
 	${tw`overflow-hidden pb-4`}
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title }) => {
 	return (
 		<PageContainer>
+			<SEO pageTitle={title} />
 			<Navbar />
 			{children}
 		</PageContainer>

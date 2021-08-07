@@ -18,7 +18,7 @@ export const Image = styled(GatsbyImage)`
 	${tw`h-16 w-16 sm:h-24 sm:w-24 rounded-lg border-2`}
 `;
 
-export const Title = styled.h3`
+export const Title = styled.span`
 	font-family: 'Josefin Sans', sans-serif;
 	${tw`uppercase text-xs sm:text-sm`}
 	${(props) =>

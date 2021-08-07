@@ -5,12 +5,10 @@ require('dotenv').config({
 const { CONTENTFUL_SPACE_ID: spaceId, CONTENTFUL_ACCESS_TOKEN: accessToken } =
 	process.env;
 
-console.log(spaceId, accessToken)
-
 module.exports = {
 	siteMetadata: {
-		siteUrl: 'https://www.yourdomain.tld',
-		title: "Will Parfitt's LinkTree",
+		siteUrl: 'https://www.magicmen.com.au/willparfitt/',
+		title: 'Magic Men Australia',
 	},
 	plugins: [
 		`gatsby-plugin-emotion`,
@@ -25,7 +23,7 @@ module.exports = {
 			options: {
 				name: 'images',
 				path: `${__dirname}/src/images/`,
-			}, 
+			},
 		},
 		{
 			resolve: `gatsby-plugin-google-fonts`,

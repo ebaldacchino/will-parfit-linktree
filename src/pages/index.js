@@ -6,7 +6,7 @@ import useQueries from '../functions/useQueries';
 const Index = () => {
 	const { logo, widgets } = useQueries();
 	return (
-		<Layout>
+		<Layout title='Will Parfitt'>
 			<Hero logo={logo} />
 			{widgets.map((widget) => {
 				return <Widget key={widget.id} {...widget} />;
