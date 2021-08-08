@@ -8,7 +8,7 @@ export const WidgetContainer = styled.a`
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.28);
 	}
-	${tw`my-2 p-0.5 mx-auto text-white rounded-lg border-2 flex w-64 sm:w-1/2 md:w-3/5 lg:w-1/2 2xl:w-1/3 transition-colors duration-200`}
+	${tw`mb-2 p-0.5 mx-auto text-white rounded-lg border-2 flex w-64 sm:w-1/2 md:w-3/5 lg:w-1/2 2xl:w-1/3 transition-colors duration-200`}
 `;
 
 export const Image = styled(GatsbyImage)`
