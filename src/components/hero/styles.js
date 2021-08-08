@@ -8,7 +8,7 @@ export const Title = styled.h1`
 `;
 
 export const ImageContainer = styled(DivWithGradientBorder)`
-	${tw`flex justify-center items-center rounded-full my-6 sm:my-8 w-36 h-36 sm:w-48 sm:h-48 md:w-60 md:h-60 p-2 overflow-hidden`}
+	${tw`flex justify-center items-center rounded-full mt-6 mb-5 sm:my-8 w-36 h-36 sm:w-48 sm:h-48 md:w-60 md:h-60 p-2 overflow-hidden`}
 	&::before {
 		${tw`rounded-full`}
 	}
