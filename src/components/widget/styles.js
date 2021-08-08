@@ -5,6 +5,7 @@ import { DivWithGradientBorder } from '../../styles';
 export const WidgetContainerBorder = styled(DivWithGradientBorder)`
 	max-width: 95%;
 	padding: 2px;
+	-webkit-tap-highlight-color: transparent;
 	${tw`mx-auto rounded-lg mb-2 w-64 sm:w-1/2 md:w-3/5 lg:w-1/2 2xl:w-1/3 overflow-hidden`}
 	&::before {
 		border-radius: calc(0.5rem - 2px);
@@ -15,7 +16,11 @@ export const WidgetContainer = styled.a`
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.28);
 	}
-	${tw`h-full w-full p-1 text-white flex transition-colors duration-200 ease-in-out rounded-lg outline-none`}
+	&:active {
+		/* background-color: rgba(0, 0, 0, 0.5); */
+		transform: scale(0.999);
+	}
+	${tw`h-full w-full p-1 text-white flex transition duration-200 ease-in-out rounded-lg outline-none`}
 `;
 
 export const ImageContainer = styled(DivWithGradientBorder)`
