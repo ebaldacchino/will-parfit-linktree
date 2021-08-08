@@ -1,7 +1,7 @@
 import tw, { css, styled } from 'twin.macro';
 
 export const IconContainer = styled.a`
-	${tw`flex-1 flex justify-center items-center py-3 text-white mt-1 mx-0.5 cursor-pointer duration-200 rounded text-2xl duration-200`} 
+	${tw`flex-1 flex justify-center items-center py-3 text-white mt-1 mx-0.5 cursor-pointer duration-200 rounded text-2xl duration-200`}
 	${(props) =>
 		(props.facebook &&
 			css`
@@ -10,7 +10,7 @@ export const IconContainer = styled.a`
 				&:hover {
 					background-color: #2a488d;
 					background: -webkit-linear-gradient(top, #2a488d, #1b3676);
-				} 
+				}
 			`) ||
 		(props.twitter &&
 			css`
@@ -19,15 +19,25 @@ export const IconContainer = styled.a`
 				&:hover {
 					background-color: #0097e4;
 					background: -webkit-linear-gradient(top, #0097e4, #0079b9);
-				} 
+				}
 			`) ||
 		(props.instagram &&
 			css`
 				background-color: #752cd4;
-				background: -webkit-linear-gradient(top, #ff8e40, #e30175, #752cd4);
+				background: -webkit-linear-gradient(
+					top,
+					#ff8e40,
+					#e30175,
+					#752cd4 85%
+				);
 				&:hover {
-					background: -webkit-linear-gradient(top, #e57f39, #cc0069, #6927be);
-				} 
+					background: -webkit-linear-gradient(
+						top,
+						#e57f39,
+						#cc0069,
+						#6927be 85%
+					);
+				}
 			`) ||
 		(props.tiktok &&
 			css`
