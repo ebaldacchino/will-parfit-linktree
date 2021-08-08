@@ -15,7 +15,7 @@ export const WidgetContainer = styled.a`
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.28);
 	}
-	${tw`p-0.5 text-white flex transition-colors duration-200 ease-in-out rounded-lg`}
+	${tw`p-1 text-white flex transition-colors duration-200 ease-in-out rounded-lg`}
 `;
 
 export const ImageContainer = styled(DivWithGradientBorder)`
