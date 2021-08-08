@@ -1,21 +1,35 @@
 import { GatsbyImage } from 'gatsby-plugin-image';
 import tw, { css, styled } from 'twin.macro';
+import { DivWithGradientBorder } from '../../styles';
+
+export const WidgetContainerBorder = styled(DivWithGradientBorder)`
+	max-width: 95%;
+	padding: 2px;
+	${tw`mx-auto rounded-lg mb-2 w-64 sm:w-1/2 md:w-3/5 lg:w-1/2 2xl:w-1/3 overflow-hidden`}
+	&::before {
+		border-radius: calc(0.5rem - 2px);
+	}
+`;
 
 export const WidgetContainer = styled.a`
-	border-color: #653086;
-	border-top-color: #b977c2;
-	max-width: 95%;
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.28);
 	}
-	${tw`mb-2 p-0.5 mx-auto text-white rounded-lg border-2 flex w-64 sm:w-1/2 md:w-3/5 lg:w-1/2 2xl:w-1/3 transition-colors duration-200 ease-in-out`}
+	${tw`p-0.5 text-white flex transition-colors duration-200 ease-in-out rounded-lg`}
+`;
+
+export const ImageContainer = styled(DivWithGradientBorder)`
+	min-width: 4rem;
+	padding: 2px;
+	&::before {
+		border-radius: calc(0.375rem - 2px);
+	}
+	${tw`h-16 w-16 sm:h-24 sm:w-24 rounded-md overflow-hidden`}
 `;
 
 export const Image = styled(GatsbyImage)`
-	border-color: #653086;
-	border-top-color: #b977c2;
-	min-width: 4rem;
-	${tw`h-16 w-16 sm:h-24 sm:w-24 rounded-lg border-2`}
+	border-radius: calc(0.375rem - 2px);
+	${tw`h-full w-full overflow-hidden`}
 `;
 
 export const Title = styled.span`
