@@ -1,7 +1,11 @@
 import tw, { css, styled } from 'twin.macro';
 
 export const IconContainer = styled.a`
-	${tw`flex-1 flex justify-center items-center py-3 text-white mt-1 mx-0.5 cursor-pointer duration-200 rounded text-2xl duration-200`}
+	${tw`flex-1 flex justify-center items-center py-3 text-white mt-1 mx-0.5 cursor-pointer transition duration-200 ease-in-out rounded text-2xl sm:text-3xl`}
+	-webkit-tap-highlight-color: transparent;
+	&:active {
+		transform: scale(0.99);
+	}
 	${(props) =>
 		(props.facebook &&
 			css`
@@ -24,12 +28,7 @@ export const IconContainer = styled.a`
 		(props.instagram &&
 			css`
 				background-color: #752cd4;
-				background: -webkit-linear-gradient(
-					top,
-					#ff8e40,
-					#e30175,
-					#752cd4 85%
-				);
+				background: -webkit-linear-gradient(top, #ff8e40, #e30175, #752cd4 85%);
 				&:hover {
 					background: -webkit-linear-gradient(
 						top,
@@ -41,7 +40,7 @@ export const IconContainer = styled.a`
 			`) ||
 		(props.tiktok &&
 			css`
-				${tw`text-black bg-white hover:bg-gray-300`}
+				${tw`text-black bg-white hover:bg-gray-300  bg-gradient-to-b from-white to-gray-300 hover:from-gray-100 hover:to-gray-400`}
 				& svg {
 					filter: drop-shadow(0 -1px #24f6f0) drop-shadow(1px 2px #fe2d52);
 				}
